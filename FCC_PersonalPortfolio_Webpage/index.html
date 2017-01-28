@@ -4,11 +4,12 @@
 <head><title>My Porfolio Webpage</title>
   <link rel="stylesheet"
   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body style="margin-top: 10%">
+<body data-spy="scroll" data-target="#overLay" data-offset="25" style="margin-top: 10%">
 
 
 <div class="container">
@@ -16,28 +17,81 @@
 <div class="row well">
 <div class="jumbotron ">Jumbotron you there?</di>
 </div>
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" style="">
   <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-  <li><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
-  <li><a data-toggle="tab" value="#mayaWord" href="#contact">Contact</a></li>
+  <li><a href="#portfolio1">Portfolio</a></li>
+  <li><a href="#contact1">Contact</a></li>
 </ul>
 
 
 <div class="row text-center tab-content">
   <div class="tab-pane fade in active" id="about">
 
-      <div class="container-fluid"><span id="mayaWord">Otoch</span>
+      <div class="container-fluid">
         <div class="jumbotron">
-          <div class="row container-fluid well">
+          <div class="row container-fluid well" id="overLay" style="">
               <div class="col-sm-4 containe">
                 <img class="img-circle" alt="MayaPowers" width="200" height="200" src="https://avatars.githubusercontent.com/u/11846379?v=3"/>
               </div>
-              <div class="col-sm-8 containe">
-                  <h3>MayaPower</h3>
-                  <p>Some text goes here about my profile</p>
+              <div class="col-sm-8 container">
+                  <h2>MayaPower</h2>
+                  <p>Front end developer with experience in Design, Art and Systems Integration.</p>
               </div>
-
           </div>
+<div class="row">
+
+  <div class="col-md-12 col-sm-12 well" id="portfolio1" style="">
+
+    <h2>Portfolio</h2>
+
+    <div class="row">
+      <p>Trueperfections.com</p>
+      <div class="col-md-6 container">
+      <img class="img-responsive"src="images/tpFrontPage_sml.png"/>
+      </div>
+      <div class="col-md-6 container">
+        <img class="img-responsive" src="images/tpPackages_sml.png"/>
+      </div>
+    </div>
+
+    <div class="row">
+    <p>Starhawksecurity.com</p>
+      <div class="col-md-6 container">
+      <img class="img-responsive"src="images/shsFrontPage_sml1.png"/>
+      </div>
+      <div class="col-md-6 container">
+        <img class="img-responsive" src="images/shsFrontPage_sml2.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 well" id="contact1">
+<h2>Contact</h2>
+
+    User Story: I can access all of the portfolio webpage's content just by scrolling.
+
+  User Story: I can click different buttons that will take me to the portfolio creator's different social media pages.
+
+  User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
+
+  User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.
+
+  Don't worry if you don't have anything to showcase on your portfolio yet - you will build several apps on the next few CodePen challenges, and can come back and update your portfolio later.
+
+  There are many great portfolio templates out there already. However, you should consider building your portfolio page as much as you can from the ground up. Using Bootstrap can help make this process much easier for you.
+
+  Note that CodePen.io overrides the Window.open() function, so if you want to open windows using jQuery, you will need to target invisible anchor elements like this one: .
+
+  Remember to use Read-Search-Ask if you get stuck.
+
+  When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
+
+  You can get feedback on your project by sharing it with your friends on Facebook.
+
+  </div>
+
+</div>
+
+
         </div>
       </div>
   </div>
@@ -56,7 +110,7 @@
   </div>
 </div>
 
-
+</div>
 </div> <!--end of container div -->
 </body>
 
