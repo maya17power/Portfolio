@@ -3,3 +3,11 @@
 .img-responsive {
   font-size: 200%;
 }
+.form-group{
+margin: auto;
+text-align: left;
+}
+label{
+  padding-left: 1%;
+  margin-top: 2%;
+}
