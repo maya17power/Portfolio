@@ -1,0 +1,52 @@
+[
+  {
+  "id":0,
+  "imageLink":"https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg",
+  "altText":"Albert Einstein",
+  "quote":[
+    "Imagination is more important than knowledge.",
+    "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+    "Anyone who has never made a mistake has never tried anything new.",
+    "Try not to become a man of success, but rather try to become a man of value.",
+    "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "Science without religion is lame, religion without science is blind.",
+    "No problem can be solved from the same level of consciousness that created it.",
+    "Everything should be made as simple as possible, but not simpler.",
+    "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.",
+    "I have no special talents. I am only passionately curious."
+    ]
+  },
+  {
+  "id":1,
+  "imageLink":"https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+  "altText":"Isaac Newton",
+  "quote":[
+    "If I have seen further than others, it is by standing upon the shoulders of giants.",
+    "I can calculate the motion of heavenly bodies, but not the madness of people.",
+    "Tact is the knack of making a point without making an enemy.",
+    "Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.",
+    "A man may imagine things that are false, but he can only understand things that are true, for if the things be false, the apprehension of them is not understanding.",
+    "This most beautiful system of the sun, planets and comets, could only proceed from the counsel and dominion of an intelligent and powerful Being.",
+    "To every action there is always opposed an equal reaction.",
+    "If I have done the public any service, it is due to my patient thought.",
+    "To myself I am only a child playing on the beach, while vast oceans of truth lie undiscovered before me.",
+    "Errors are not in the art but in the artificers."
+    ]
+  },
+  {
+  "id":2,
+  "imageLink":"http://okp-cdn.okayplayer.com/wp-content/uploads/2013/02/jimi-hendrix-8150.jpg",
+  "altText":"Jimmy Hendrix",
+  "quote":[
+    "When the power of love overcomes the love of power the world will know peace.",
+    "Knowledge speaks, but wisdom listens.",
+    "You have to go on and be crazy. Craziness is like heaven.",
+    "Excuse me while I kiss the sky.",
+    "Music doesnt lie. If there is something to be changed in this world, then it can only happen through music.",
+    "Im the one that has to die when its time for me to die, so let me live my life, the way I want to.",
+    "Music is a safe kind of high.",
+    "The story of life is quicker then the blink of an eye, the story of love is hello, goodbye.",
+    "I used to live in a room full of mirrors; all I could see was me. I take my spirit and I crash my mirrors, now the whole world is here for me to see."
+    ]
+  }
+]
