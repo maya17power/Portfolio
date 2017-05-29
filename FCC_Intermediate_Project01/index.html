@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/scripts/index.js"></script>
 </head>
-
 <body data-spy = "scroll" data-target = "#overlay" data-offset = "25">
   <div class="container">
     <div class="row">
@@ -27,25 +26,19 @@
     </div>
     <ul class="nav nav-tabs">
       <li class="active"><a href="#quotes">Quotes</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
     </ul>
     <div class="row text-center tab-content">
-      <div class="tab-pane fade in active" id="quote">
+      <div class="tab-pane fade in active" id="quotes">
         <div class="jumbotron">
           <div class="row well">
-            <div class="col-md-4 col-sm-12 text-center images" id="image">
-              <!--<img src="images/albert02.jpeg">-->
-              <div class="col-md-12 col-sm-12 text-center authors" id="author">
-                Author name
-              </div>
+            <div class="col-md-12 col-sm-12 text-center authors" id="author"></div>
+            <div class="col-md-4 col-sm-12 text-center" id="images">
             </div>
-            <div class="col-md-4 col-sm-12 text-center quotes" id="quotes">
-              some quotes here.
-            </div>
+                <div class="col-md-6 col-sm-12 text-center quotes" id="quote">
+                </div>
           </div>
-            <button type="button" class="btn btn-default" id="qButton">Quote Please</button>
         </div>
+            <button type="button" class="btn btn-default" id="qButton">Quote Please</button>
       </div>
     </div>
   </div>
