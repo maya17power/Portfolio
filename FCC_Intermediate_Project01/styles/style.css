@@ -3,3 +3,16 @@
 body{
   margin-top: 5%
 }
+.images{
+
+}
+.authors{
+font-size: 25px;
+}
+.quotes{
+  font-size: 30px;
+  border-color: red;
+  border-style: solid;
+  margin-left: 5%;
+  margin-top: 3%;
+}
