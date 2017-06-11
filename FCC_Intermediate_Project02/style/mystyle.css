@@ -1,0 +1,17 @@
+body{
+
+}
+.container{
+  margin-top: 5%;
+  height: 700px;
+  background-image: url("https://cache.nebula.phx3.secureserver.net/obj/MUY3NUU4ODAzOTU5QTIwQjQ2NTU6ODQ3MjUzMTE3MzUyNzBmZDQ5MGY0MTI3ZDMxYmIxMzk=");
+}
+.row{
+  margin-top: 5%;
+  height: 50px;
+}
+.col-md-4{
+  padding-top: 1%;
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 50px;
+}
