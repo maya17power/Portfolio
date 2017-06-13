@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Ajax HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script>
+      //get link of json file.
+      var url = "https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches";
+      var googleGeo = "https://maps.googleapis.com/maps/api/geocode/json?latlng=34.62365,118.22285&key=AIzaSyCsGtIGGryl78JLKB46XCkJ_VDbaZobYA4"
+      var xmlhttp;
+      window.onload = function(){
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = process;//utilize process function to check for connectivity
+        xmlhttp.open("GET",googleGeo,true);//get data from url Asynchronous(user can multitask while getting data.)
+        xmlhttp.send();//sends request
+      }
+
+      function process(){
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+          //We have our data
+          console.log(JSON.parse(xmlhttp.responseText));
+          //var restaurantData = JSON.parse(xmlhttp.responseText);
+         /* for(var i = 0; i < restaurantData.length; i++){
+            //console.log(restaurantData[i].business);
+            document.getElementById("result").innerHTML += "<p>" + restaurantData[i].business + "<br/>";
+          }*/
+          /*console.log(restaurantData);*/
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  <div id="result">
+
+  </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
