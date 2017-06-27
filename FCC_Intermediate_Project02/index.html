@@ -1,34 +1,170 @@
 <!DOCTYPE html>
-<head><title>Show the Local Weather</title>
+<html>
+<head><title>My Porfolio Webpage</title>
+  <link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="style/mystyle.css"/>
-  <script src="script/myscript.js"></script>
+  <script src="animation.js"></script>
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#overLay" data-offset="25" style="margin-top: 5%">
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>Local Weather App</h1>
-    <div>
+      <div class="row well-sm">
+        <div class="img-responsive col-xs-12">
+          <ul class="list-inline text-center">
+            <li><a href="http://linkedin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></a></i></li>
+            <li><a href="http://github.com"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+            <li><a href="http://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></a></i></li>
+            <li><a href="http://google.com"><i class="fa fa-shield" aria-hidden="true"></a></i></li>
+          </ul>
+        </div>
+      </div>
   </div>
-  <div class="row">
-    <div class="col-md-12 text-center weatherIcon" id="weatherIcon"></div>
-  </di>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#about">Weather App</a></li>
 
-  <div class="row">
-    <div class="col-md-12 text-center temp" id="temp"></div>
-    
-  </div>
-  <div class="row">
-      <div class="col-md-4 col-xs-4 text-center" id="cityState"></div>
-      <div class="col-md-4 col-xs-4 text-center" id="skyDetails"></div>
-      <div class="col-md-4 col-xs-4 text-center" id="windSpeed"></div>
+</ul>
+
+<div class="row text-center tab-content">
+  <div class="tab-pane fade in active" id="mainDiv">
+        <div class="jumbotron">
+          <div class="row well" id="weatherImage">
+              <div class="col-md-4 col-sm-6" id="circleDiv">
+                <img class="img-circle" id="img-cirlce" style="margin-top: 10%" alt="MayaPowers" width="200" height="200" src="https://avatars.githubusercontent.com/u/11846379?v=3"/>
+              </div>
+                <div class="col-md-8 col-sm-12 container">
+                    <h2>Today's Weather</h2>
+                    <div class="col-md-12 col-sm-12 container">
+                      <div class="data" id="location">Location</div>
+                      <div class="data" id="temp">Temperature</div>
+                      <div class="data" id="tempIcon">Icon</div>
+                      <div class="data" id="description">Description</div>
+                      <div class="data" id="windSpeed">Windspeed</div>
+                    </div>
+
+                </div>
+          </div>
+<!--<div class="row">
+  <div class="col-md-12 col-sm-12 well" id="portfolio1">
+    <h2>Portfolio</h2>
+      <div class="row">
+        <h2><small class="small">Trueperfections.com</small></h2>
+          <div class="col-md-6 container">
+            <img class="img-responsive img-thumbnail"src="images/tpFrontPage_sml.png"/>
+          </div>
+          <div class="col-md-6 container">
+            <img class="img-responsive img-thumbnail" src="images/tpPackages_sml.png"/>
+          </div>
+      </div>
+
+    <div class="row">
+      <h2><small class="small">Starhawksecurity.com</small></h2>
+        <div class="col-md-6 container">
+          <img class="img-responsive img-thumbnail"src="images/shsFrontPage_sml1.png"/>
+        </div>
+        <div class="col-md-6 container">
+          <img class="img-responsive img-thumbnail" src="images/shsFrontPage_sml2.png"/>
+        </div>
+    </div>
   </div>
 
+<div class="col-md-6 col-sm-6 well" id="contact1">
+  <h2>Contact</h2>
+  <h3><small class="small">Feel free to contact me if you have any questions about my work or skill set. If you have a project in mind and would like some assistance in building, retrofiting your website or if you have questions about systems integration,
+    please fill out the form below and I will respond in a timely manner.</small></h3>
+    <form>
+      <div class="row">
+        <div class="container">
+          <form>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" placeholder="First name, Last name">
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" placeholder="youremail@email.com">
+            </div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+              <label for="comments">Comments:</label>
+              <textarea rows="5" col="3" class="form-control" placeholder="How can i help you?"></textarea>
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-12" style="padding-top: 3%">
+              <button type="submit" class="btn btn-block btn-default">Submit</button>
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-12" style="padding-top: 3%">
+              <button type="submit" class="btn btn-block btn-warning">Clear</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </form>
 </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 well-lg" id="reference1">
+          <h2>References</h2>
+          <h3><small class="small">Below is a list of references from current and previous employers.</small></h3>
+            <table class="table table-striped text-left">
+              <thead>
+                <tr>
+                  <th>Company Name</th>
+                  <th>Telephone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Trueperfections</td>
+                  <td>(747) 444-1809</td>
+                </tr>
+                <tr>
+                  <td>Starhawksecurity</td>
+                  <td>(747) 777-3191</td>
+                </tr>
+                <tr>
+                  <td>Shockware Systems</td>
+                  <td>(650) 834-3***</td>
+                </tr>
+                <tr>
+                  <td>Castro Coffee Co.</td>
+                  <td>(650) 346-3***</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Certifications</h2>
+            <h3><small class="small">Below are my current certifications</small></h3>
+              <div class="row">
+                <div class="container col-lg-12 col-md-10">
+                  <ul class="list-unstyled list-inline">
+                    <li><img src="http://www.american-school-search.com/images/logo/heald-college.png" class="cert"/></li>
+                    <li><img src="http://www.ntuclearninghub.com.sg/resources/images/Next%20U%20ICT/Certifications/ccent_network_large.jpg"class="cert"/></li>
+                    <li><img src="http://integrasoftlab.com/files/ccna.jpg"class="cert"/></li>
+                    <li><img src="http://pcrepairhamilton.ca/wp-content/uploads/comptia-aplus-certified-it-technician.jpg" class="cert"/></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>-->
+
+    </div> <!--end of jumbotron-->
+  </div> <!--end of tab pane-->
+</div> <!--end of tab content row-->
+
+
+<div class="row">
+  <div class="containe well-sm col-xs-12">
+    <footer>
+    <h3 class="text-center"><small>&copy;MayaCode, 2017, All rights reserverd.</small></h3>
+    </footer>
+  </div>
+</div>
+
+</div> <!--end of container div -->
 
 </body>
 </html>

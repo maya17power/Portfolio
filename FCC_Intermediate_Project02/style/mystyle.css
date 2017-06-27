@@ -1,42 +1,23 @@
-body{
 
+#mainDiv{
+  width: 100%;
 }
-.container{
-  margin-top: 5%;
-  height: 700px;
-  background-image: url("https://cache.nebula.phx3.secureserver.net/obj/MUY3NUU4ODAzOTU5QTIwQjQ2NTU6ODQ3MjUzMTE3MzUyNzBmZDQ5MGY0MTI3ZDMxYmIxMzk=");
+#weatherData{
+  width: 75%;
 }
-.row{
-  margin-top: 5%;
-  height: 50px;
+#weatherImage{
+  background-image: url("");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*img urls
+  http://www.hdwallpapers.in/walls/spring_sunny_landscape-wide.jpg
+  */
 }
-.col-md-4{
-  padding-top: 1%;
-  background-color: rgba(0, 0, 0, 0.0);
-  height: 50px;
+.data{
+
+  font-size: 15px;
 }
-#weatherIcon img{
-  width: 125px;
-  height: 125px;
-}
-#temp{
-  font-size: 90px;
-}
-#cityState, #skyDetails, #windSpeed{
-  font-size: 35px;
-  color: white;
-}
-#button{
-  font-size: 20px;
-}
-/*.weatherIcon{
+#toggle{
   background-color: red;
+  width: 100%;
 }
-
-.temp{
-  background-color: blue;
-}
-
-.button{
-  background-color: yellow;
-}*/
